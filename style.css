@@ -1,0 +1,163 @@
+
+
+
+.nav-item{
+    font-size: 18px;
+    padding-right: 3em;
+    margin-left: 50px;
+    position: relative;
+    line-height: .5rem;
+    
+}
+
+.nav-item:hover{
+    font-weight: bolder;
+   
+}
+
+.nav-item:after{
+    content:"";
+    position:absolute;
+    height: 4px;
+    bottom:-3px;
+    transition: 0.3s ease-in;
+    background-color: blueviolet;
+    width:0;
+    left:0;
+    border-radius: 1px;
+}
+
+.nav-item:hover:after{
+    width:70%;
+}
+
+
+h1{
+    height:40px;
+    
+}
+
+.logo{
+    margin-right: 10px;
+  
+} 
+
+.container{
+    margin-top: 50px;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.mail{
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.float-left{
+    background-color: blueviolet;
+    padding: 4px;
+    border-radius: 5px;
+
+}
+
+@keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: #FCCA00; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+  }
+
+.yellow, h1, .dot{
+    background-color: #33CCCC;
+    border-radius: 10px;
+    animation: color 9s infinite linear;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+li{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+
+    .typing{
+        color: black;
+    }
+
+    .dot{
+        background-color: #33CC36 ;
+        padding: 5px;
+
+    }
+
+    .check{
+        font-size: 20px;
+        margin-top: 20px;
+        width: 40%;
+        margin-left: 100px;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .altared{
+        display: flex;
+        justify-content: center;
+        padding: 150px;
+    }
+
+    .image2{
+        align-self: center;
+    }
+
+    .btn {
+        border-color: blueviolet;
+        color: #fff;
+        box-shadow: 0 0 40px 40px blueviolet inset, 0 0 0 0 blueviolet;
+        -webkit-transition: all 150ms ease-in-out;
+        transition: all 150ms ease-in-out;
+      }
+      .btn:hover {
+        box-shadow: 0 0 10px 0 blueviolet inset, 0 0 10px 4px blueviolet;
+        font-size: larger;
+      }
+
+      .inst:hover{
+          width: 40px;
+          height: 40px;
+      }
+
+
+      .container{
+          display: flex;
+          flex-direction: column;
+      }
+      .float-left{
+          align-self: flex-end;
+      }
+
+      .carousel-control-prev-icon{
+        color: purple;
+
+      }
+
+      @media all and (max-width: 800px){
+        .altared{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 50px;
+        }
+        .check{
+            font-size: 16px;
+            margin-top: 20px;
+            width: 30%;
+
+      }}
+
